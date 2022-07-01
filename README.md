@@ -25,7 +25,6 @@ YouDemy is an online learning platform that combines YouTube with Udemy. Users c
 * `Apollo`
 * `PostgreSQL`
 
-<br />
 
 ## Getting Started
 Feel free to clone and/or fork this project using the steps below
@@ -33,7 +32,7 @@ Feel free to clone and/or fork this project using the steps below
 ### Installation
 1. Clone the repo
 ```
-https://github.com/kjsbot/you-demy.git
+https://github.com/kjsbot/YouDemy.git
 ```
 2. Install NPM packages
 ```
