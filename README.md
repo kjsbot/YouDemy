@@ -19,23 +19,8 @@ YouTube + Udemy
 YouDemy is an online learning platform that combines YouTube with Udemy. Users can paste in YouTube playlists and view them in a virtual course format
 
 ### Built with 
-* `React`
-* `Node.js`
-* `GraphQL`
-* `Apollo`
-* `PostgreSQL`
-
-
-## Getting Started
-Feel free to clone and/or fork this project using the steps below
-
-### Installation
-1. Clone the repo
-```
-https://github.com/kjsbot/YouDemy.git
-```
-2. Install NPM packages
-```
-npm i
-```
-3. Run the local development server
+* React
+* Node.js
+* GraphQL
+* Apollo
+* PostgreSQL
