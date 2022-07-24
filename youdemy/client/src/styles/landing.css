@@ -3,6 +3,10 @@
     background-color: #D11A78;
 }
 
+a {
+    text-decoration: none;
+}
+
 .main {
     display: flex;
     flex-direction: column;
