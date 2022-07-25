@@ -1,0 +1,28 @@
+.chapter {
+    background-color: rgba(244, 244, 244, 0.919);
+    display: flex;
+    flex-direction: row;
+    width: 25em;
+    align-items: center;
+    border-bottom: 1px solid rgba(155, 155, 155, 0.573);
+    cursor: pointer;
+}
+
+.left-div {
+    padding: 10px;
+}
+
+.right-div {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.video-name {
+    font-weight: 600;
+}
+
+.video-length {
+    font-style: italic;
+    float: right;
+}

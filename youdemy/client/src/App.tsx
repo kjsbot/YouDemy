@@ -9,6 +9,7 @@ import Landing from './pages/Landing';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Header from './components/Header';
+import CoursePage from './pages/CoursePage';
 
 const client = new ApolloClient({
   uri: "http://localhost:4000", // url of backend
@@ -26,6 +27,7 @@ function App() {
             <Route path="/new" element={[<Header />, <NewCourse />]} />
             <Route path="/signup" element={[<Header />, <Signup />]} />
             <Route path="/login" element={[<Header />, <Login />]} />
+            <Route path="/course" element={[<Header />, <CoursePage />]} />
           </Routes>
         </BrowserRouter>
       </div>

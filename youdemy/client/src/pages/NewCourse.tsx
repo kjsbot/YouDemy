@@ -33,7 +33,6 @@ const NewCourse = () => {
         if (validateUrl(urlYT)) {
             const playlistId = urlYT.split('playlist?list=', 2)[1];
             getPlaylist(playlistId);
-            // https://www.youtube.com/playlist?list=PLPV2KyIb3jR5QFsefuO2RlAgWEz6EvVi6
         } else { console.log("Not a Youtube playlist url!"); }
 
         setUrlYT("");
