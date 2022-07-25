@@ -1,10 +1,10 @@
 import React from 'react';
-import { BsThreeDotsVertical } from "react-icons/bs";
+import { BiTrashAlt } from "react-icons/bi";
 
 const CardMenu = () => {
     return (
         <div className="card-menu">
-            <BsThreeDotsVertical size={25} />
+            <BiTrashAlt size={25} color="eb6a67" />
         </div>
     );
 };

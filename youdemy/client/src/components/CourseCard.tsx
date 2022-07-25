@@ -13,6 +13,7 @@ const CourseCard = () => {
             <div className="course-info">
                 <div className="home-title">Creating a 3D Game - For Beginners!</div>
                 <div className="home-author">Brackeys</div>
+                <div className="home-link">Original</div>
                 <div className="home-status">In Progress</div>
             </div>
             
