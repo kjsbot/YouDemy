@@ -1,27 +1,41 @@
 import { useState } from 'react';
+import axios, { Axios } from 'axios';
 import '../styles/newcourse.css';
 
 import InputField from '../components/InputField';
 
 const NewCourse = () => {
     const [urlYT, setUrlYT] = useState<string>("");
-    
+    const key = "AIzaSyCeZzaajfxzuSxJwaSal_HeBuABhrrXvVU";
+    const baseUrl = "https://www.googleapis.com/youtube/v3/playlistItems";
+    // https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLPV2KyIb3jR5QFsefuO2RlAgWEz6EvVi6&maxResults=50&key=AIzaSyCeZzaajfxzuSxJwaSal_HeBuABhrrXvVU
+
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => setUrlYT(e.target.value);
     
     const validateUrl = (url: string): boolean => {
         return url.toLowerCase().includes("https://www.youtube.com/playlist?list=");
     };
 
-    const getPlaylist = () => {
-        console.log(urlYT);
+    const getPlaylist = (playlistId: string) => {
+        const reqUrl = `${baseUrl}?part=snippet&playlistId=${playlistId}&maxResults=50&key=${key}`
+
+        axios.get(reqUrl)
+            .then(res => {
+                console.log(res);
+            })
+            .catch(err => {
+                console.log(err);
+            });
     };
     
     const submitForm = (e: React.FormEvent<HTMLInputElement>) => {
         e.preventDefault();
         if (validateUrl(urlYT)) {
-            getPlaylist();
+            const playlistId = urlYT.split('playlist?list=', 2)[1];
+            getPlaylist(playlistId);
             // https://www.youtube.com/playlist?list=PLPV2KyIb3jR5QFsefuO2RlAgWEz6EvVi6
         } else { console.log("Not a Youtube playlist url!"); }
+
         setUrlYT("");
     };
 
