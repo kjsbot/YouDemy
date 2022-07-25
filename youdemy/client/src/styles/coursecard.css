@@ -1,4 +1,37 @@
 .course-card {
-    background-color: salmon;
+    background-color: rgb(250, 248, 247);
+    max-width: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 15px;
 }
 
+.thumbnail {
+    align-self: center;
+}
+
+.course-info {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.home-title {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.home-author {
+    font-style: italic;
+}
+
+.home-status {
+    background-color: #f6bd60;
+    border-radius: 8px;
+}

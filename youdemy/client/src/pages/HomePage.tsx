@@ -6,9 +6,18 @@ import CourseCard from '../components/CourseCard';
 const HomePage = () => {
     return (
         <div className="home-page">
-            My Learning
+            <h1 className="home-h1">My Learning</h1>
             <hr />
-            
+            <CourseCard />
+            <CourseCard />
+            <CourseCard />
+            <CourseCard />
+            <CourseCard />
+            <CourseCard />
+            <CourseCard />
+            <CourseCard />
+            <CourseCard />
+            <CourseCard />
         </div>
     );
 };

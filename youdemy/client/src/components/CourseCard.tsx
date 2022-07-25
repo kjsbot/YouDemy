@@ -6,16 +6,20 @@ import CardMenu from './CardMenu';
 const CourseCard = () => {
     return (
         <div className="course-card">
-            <div className="Thumbnail">
+            <div className="thumbnail">
                 Thumbnail
             </div>
 
             <div className="course-info">
-                Titlee
-                Author
+                <div className="home-title">Creating a 3D Game - For Beginners!</div>
+                <div className="home-author">Brackeys</div>
+                <div className="home-status">In Progress</div>
             </div>
             
-            <CardMenu />
+            <div className="home-coursemenu">
+                <CardMenu />
+            </div>
+
         </div>
     );
 };
