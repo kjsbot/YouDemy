@@ -3,7 +3,12 @@ import YouTube from 'react-youtube';
 
 import "../../styles/currentvid.css"
 
-const CurrentVideo = () => {
+type Props = {
+    currentVidUrl: string;
+    currentVidIndex: number;
+};
+
+const CurrentVideo = ({currentVidUrl, currentVidIndex}: Props) => {
     const [status, setStatus] = useState<number>(0); // red circle
 
     const onStartVideo = () => {

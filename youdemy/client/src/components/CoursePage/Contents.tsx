@@ -2,7 +2,11 @@ import React from 'react';
 import Chapter from './Chapter';
 import "../../styles/contents.css"
 
-const Contents = () => {
+type Props = {
+    allCourseVids: any
+};
+
+const Contents = ({allCourseVids}: Props) => {
     return (
         <div className="contents">
             <div className="course-title">Next.js Crash Course</div>

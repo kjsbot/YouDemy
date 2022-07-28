@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Contents from '../components/CoursePage/Contents';
 import CurrentVideo from '../components/CoursePage/CurrentVideo';
 
 import "../styles/coursepage.css"
 
-const CoursePage = () => {
+type Props = {
+    courseData?: any
+};
+
+const CoursePage = ({courseData}: Props) => {
+    const [currentVidIndex, setcurrentVidIndex] = useState<number>(0);
+
     return (
         <div className="course-page">
-            <Contents />
-            <CurrentVideo />
+            <Contents allCourseVids={courseData} />
+            <CurrentVideo currentVidUrl={""} currentVidIndex={currentVidIndex} />
         </div>
     );
 };
