@@ -1,11 +1,18 @@
 .chapter {
-    background-color: rgba(244, 244, 244, 0.183);
     display: flex;
     flex-direction: row;
     width: 25em;
     align-items: center;
     border-bottom: 1px solid rgba(155, 155, 155, 0.573);
     cursor: pointer;
+}
+
+.chapter:hover {
+    background-color: rgb(251, 251, 251);
+}
+
+.chapter:active {
+    background-color: rgb(226, 226, 226);
 }
 
 .left-div {
